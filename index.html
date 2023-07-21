@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Password</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+
+		<script type="text/javascript">
+
+			function checkpassword() {
+
+				var password = document.getElementById("pb");
+				var passwordText = password.value;
+				if (passwordText == "Minecraft") {
+					return true;
+				}
+				else {
+					alert("Access Denied")
+					return false
+				}
+
+			}
+
+		</script>
+	</head>
+	<body>
+
+		<p style="font-size:50px;"> Welcome! </p>
+		<p>Please enter the password to view the website.</p>
+		<p> Password: <input id="pb" type="password"></p>
+		<div style="text-align: center;">
+			<form method="get" action="AlexPage1.html" onclick="return checkpassword()">
+				<button>Click Here to Submit Password</button>
+			</form>
+		</div>
+
+	</body>
+</html>
